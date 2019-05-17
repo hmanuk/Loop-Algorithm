@@ -1,4 +1,12 @@
 function [a,b,w,v,h,E] = gen_abW_01(n,m,n_loops,loop_ratio,vers,frus)
+% generates frustrated RBM instances of 0-1 node values
+
+% n is the number of visible nodes
+% m is the number of hiddne nodes
+% n_loops is the number of loops
+% set loop_ratio = 1
+% use vers = 0 for random loop algorithm
+% frus < 0.25
 
 % nl1 is the number of top loops
 % nl2 is the number of left loops
