@@ -1,4 +1,4 @@
-function [a,b,w,v,h,E] = gen_abW(n,m,n_loops,loop_ratio,vers,frus)
+function [a,b,w,v,h,E] = gen_abW_01(n,m,n_loops,loop_ratio,vers,frus)
 
 % nl1 is the number of top loops
 % nl2 is the number of left loops
