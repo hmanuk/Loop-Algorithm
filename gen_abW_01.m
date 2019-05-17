@@ -1,4 +1,4 @@
-function [a,b,w,v,h,E] = gen_abW_01(n,m,n_loops,loop_ratio,vers,frus)
+function [a01,b01,w01,v,h,E] = gen_abW_01(n,m,n_loops,loop_ratio,vers,frus)
 % generates frustrated RBM instances of 0-1 node values
 
 % n is the number of visible nodes
@@ -42,10 +42,10 @@ a(1:n) = Wg(1:n,m+1).';
 b(1:m) = Wg(n+1,1:m);
 % biases of the hidden nodes
 
-a = 2*a + 2*sum(w.');
-b = 2*b + 2*sum(w);
-w = 4*w;
-E = E - sum(a) - sum(b) + sum(w(:));
+a01 = 2*a + 2*sum(w.');
+b01 = 2*b + 2*sum(w);
+w01 = 4*w;
+E = E - sum(a01) - sum(b01) + sum(w01(:));
 v = (v+1)/2;
 h = (h+1)/2;
 
