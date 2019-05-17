@@ -45,7 +45,7 @@ b(1:m) = Wg(n+1,1:m);
 a01 = 2*a + 2*sum(w.');
 b01 = 2*b + 2*sum(w);
 w01 = 4*w;
-E = E - sum(a01) - sum(b01) + sum(w01(:));
+E = E - sum(a) - sum(b) + sum(w(:));
 v = (v+1)/2;
 h = (h+1)/2;
 
