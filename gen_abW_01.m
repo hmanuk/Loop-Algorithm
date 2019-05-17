@@ -42,8 +42,8 @@ a(1:n) = Wg(1:n,m+1).';
 b(1:m) = Wg(n+1,1:m);
 % biases of the hidden nodes
 
-a = 2*a + 2*sum(w);
-b = 2*b + 2*sum(w.');
+a = 2*a + 2*sum(w.');
+b = 2*b + 2*sum(w);
 w = 4*w;
 E = E - sum(a) - sum(b) + sum(w(:));
 v = (v+1)/2;
